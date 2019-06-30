@@ -64,7 +64,7 @@ a:hover {
 
 /* サンプル画像 */
 .sample {
-  background-color: #707070;
+  background-color: #897373;
 }
 
 /* ヘッダー */
@@ -187,6 +187,83 @@ nav ul li a:hover {
 #portfolio .sample {
   width: 248px;
   height: 140px;
+}
+
+#portfolio .works-box {
+  position: relative;
+  top: 0;
+  left: 248px;
+  width: 248px;
+  height: 140px;
+  margin-top: 16px;
+}
+
+#portfolio .works-box a {
+  position: relative;
+  display: block;
+}
+
+#portfolio .works-box a .works-box-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  height: 140px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+#portfolio .works-box a .works-box-inner div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  padding-top: 2%;
+}
+
+#portfolio .works-box a .works-box-inner h3 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#portfolio .works-box a .works-box-inner small {
+  display: block;
+  margin-bottom: 15px;
+}
+#portfolio .works-box a .works-box-inner .button-readmore {
+  font-size: 1rem;
+  font-weight: bold;
+  display: block;
+  width: 180px;
+  margin: auto;
+  text-align: center;
+  color: #707070;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  background-color: #fff;
+}
+#portfolio .works-box a .works-box-inner .button-readmore:hover {
+  color: #fff;
+  background-color: #4E7145;
+}
+
+#portfolio .works-box a:hover .works-box-inner {
+  display: block;
+  width: 100%;
+}
+
+#portfolio .works-box img {
+  display: block;
+  max-width: 100%;
+}
+
+#portfolio::after {
+  display: block;
+  clear: both;
+  content: '';
 }
 
 /* フッター */
