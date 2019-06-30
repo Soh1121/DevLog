@@ -109,7 +109,7 @@ nav ul li a:hover {
 }
 
 /* トップ画像 */
-div .sample {
+.sample {
   width: 744px;
   height: 418px;
   background-color: #707070;
