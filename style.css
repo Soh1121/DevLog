@@ -8,6 +8,11 @@ body {
   margin:0;
 }
 
+h2 {
+  font-size: 2.3em;
+  font-weight: bold;
+}
+
 .container {
   width: 744px;
   margin: auto;
@@ -49,6 +54,10 @@ header {
   line-height: 60px;
 }
 
+header #logo {
+  padding-left: 20px;
+}
+
 h1 {
   color: #fff;
   font-size: 1.8em;
@@ -62,6 +71,7 @@ header a {
 nav {
   width: 100%;
   margin: auto;
+  padding-right: 20px;
 }
 
 nav ul {
@@ -105,6 +115,20 @@ div .sample {
   background-color: #707070;
 }
 
+/* スキル */
+#skills {
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+#skills h2 {
+  color: #707070;
+}
+
+#skills section {
+  width: 186px;
+}
+
 /* フッター */
 #contact {
   background-color: #4E7145;
@@ -113,8 +137,6 @@ div .sample {
 
 #contact h2 {
   color: #fff;
-  font-size: 2.3em;
-  font-weight: bold;
 }
 
 #contact ul {
