@@ -266,15 +266,15 @@ nav ul li a:hover {
   width: 180px;
   margin: auto;
   text-align: center;
-  color: #707070;
+  color: #fff;
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
           border-radius: 4px;
-  background-color: #fff;
+  background-color: #4E7145;
 }
 #portfolio .works-box a .works-box-inner .button-readmore:hover {
   color: #fff;
-  background-color: #4E7145;
+  background-color: rgba(135, 206, 118, 0.7);
 }
 
 #portfolio .works-box a:hover .works-box-inner {
@@ -327,6 +327,39 @@ nav ul li a:hover {
 #blog p {
   line-height: 15px;
   width: 218px;
+}
+
+#blog a {
+  text-decoration: none;
+}
+
+#blog .button {
+  margin-top: 15px;
+}
+
+#blog .button-readmore {
+  font-size: 1rem;
+  font-weight: bold;
+  display: block;
+  width: 180px;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  background-color: #4E7145;
+}
+
+#blog .button-readmore:hover {
+  color: #fff;
+  background-color: rgba(135, 206, 118, 0.7);
+}
+
+#blog::after {
+  display: block;
+  clear: both;
+  content: '';
 }
 
 /* フッター */
