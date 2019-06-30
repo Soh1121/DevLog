@@ -97,3 +97,69 @@ nav ul li a {
 nav ul li a:hover {
   text-decoration: none;
 }
+
+/* フッター */
+#contact {
+  background-color: #4E7145;
+  padding: 50px 0;
+}
+
+#contact h2 {
+  color: #fff;
+  font-size: 2.3em;
+  font-weight: bold;
+}
+
+#contact ul {
+  margin-top: 30px;
+}
+
+#contact ul li
+{
+  font-size: 2.8rem;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-right: 22px;
+  text-align: center;
+  vertical-align: top;
+}
+
+#contact ul li:last-child
+{
+  margin-right: 0;
+}
+
+#contact ul .github i
+{
+  margin-left: 2px;
+}
+
+#contact ul .facebook i,
+#contact ul .twitter i
+{
+    margin-left: 2px;
+}
+
+#contact ul .github i
+{
+    margin-right: 1px;
+}
+
+#contact ul a
+{
+  display: block;
+  width: 80px;
+  height: 80px;
+  color: #707070;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+#contact ul a:hover
+{
+  background-color: #ddd;
+}
