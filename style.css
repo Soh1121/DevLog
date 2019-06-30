@@ -22,7 +22,6 @@ h2 {
 h3 {
   font-size: 1.2em;
   font-weight: bold;
-  padding-top: 16px;
 }
 
 .container {
@@ -32,6 +31,10 @@ h3 {
 
 .center {
   text-align: center;
+}
+
+.right {
+  text-align: right;
 }
 
 .leftcol {
@@ -53,7 +56,7 @@ h3 {
 }
 
 a {
-  color: #009d8e;
+  color: #707070;
   text-decoration: none;
   outline: none;
 }
@@ -64,6 +67,7 @@ a:hover {
 
 /* サンプル画像 */
 .sample {
+  display: block;
   background-color: #897373;
 }
 
@@ -124,9 +128,24 @@ nav ul li a:hover {
 }
 
 /* トップ画像 */
+#toppic {
+  position: relative;
+}
+
 #toppic .sample {
   width: 744px;
   height: 418px;
+}
+
+#toppic p {
+  font-size: 3em;
+  font-family: 'Pacifico';
+  line-height: 1.5em;
+  color: #fff;
+  position: absolute;
+  top: 2em;
+  right: 3em;
+  text-shadow: 2px 2px 2px #555;
 }
 
 /* スキル */
@@ -147,6 +166,10 @@ nav ul li a:hover {
 
 #skills h2 {
   color: #4E7145;
+}
+
+#skills h3 {
+  padding-top: 16px;
 }
 
 #skills p {
@@ -184,6 +207,10 @@ nav ul li a:hover {
   color: #fff;
 }
 
+#portfolio h3 {
+  padding-top: 16px;
+}
+
 #portfolio .sample {
   width: 248px;
   height: 140px;
@@ -192,7 +219,7 @@ nav ul li a:hover {
 #portfolio .works-box {
   position: relative;
   top: 0;
-  left: 248px;
+  left: 258px;
   width: 248px;
   height: 140px;
   margin-top: 16px;
@@ -264,6 +291,42 @@ nav ul li a:hover {
   display: block;
   clear: both;
   content: '';
+}
+
+/* ブログ */
+#blog {
+  background-color: #fff;
+  padding: 50px 15px;
+}
+
+#blog .blog-container {
+  display: flex;
+}
+
+#blog .blog-box {
+  width: 218px;
+  margin-top: 30px;
+  margin-right: 30px;
+}
+
+#blog .sample {
+  width: 218px;
+  height: 140px;
+}
+
+#blog h2 {
+  color: #4E7145;
+}
+
+#blog h3 {
+  line-height: 20px;
+  padding-top: 5px;
+  width: 218px;;
+}
+
+#blog p {
+  line-height: 15px;
+  width: 218px;
 }
 
 /* フッター */
