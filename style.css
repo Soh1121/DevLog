@@ -48,6 +48,10 @@ h3 {
     clear: both;
 }
 
+.uppercase, h2 {
+    text-transform: uppercase;
+}
+
 a {
   color: #009d8e;
   text-decoration: none;
@@ -56,6 +60,11 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+/* サンプル画像 */
+.sample {
+  background-color: #707070;
 }
 
 /* ヘッダー */
@@ -115,10 +124,9 @@ nav ul li a:hover {
 }
 
 /* トップ画像 */
-.sample {
+#toppic .sample {
   width: 744px;
   height: 418px;
-  background-color: #707070;
 }
 
 /* スキル */
@@ -164,6 +172,21 @@ nav ul li a:hover {
 
 #skills .fa-html5 {
   padding-top: 22px;
+}
+
+/* ポートフォリオ */
+#portfolio {
+  background-color: #4E7145;
+  padding: 50px 0;
+}
+
+#portfolio h2 {
+  color: #fff;
+}
+
+#portfolio .sample {
+  width: 248px;
+  height: 140px;
 }
 
 /* フッター */
