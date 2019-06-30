@@ -4,8 +4,25 @@ body {
   background-color: #FDFBDA;
   font-size: .95em;
   line-height: 1.83;
-  color: #333;
+  color: #707070;
   margin:0;
+}
+
+h1 {
+  color: #fff;
+  font-size: 1.8em;
+  font-family: 'Pacifico';
+}
+
+h2 {
+  font-size: 2.3em;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding-top: 16px;
 }
 
 .container {
@@ -49,10 +66,8 @@ header {
   line-height: 60px;
 }
 
-h1 {
-  color: #fff;
-  font-size: 1.8em;
-  font-family: 'Pacifico';
+header #logo {
+  padding-left: 20px;
 }
 
 header a {
@@ -62,6 +77,7 @@ header a {
 nav {
   width: 100%;
   margin: auto;
+  padding-right: 20px;
 }
 
 nav ul {
@@ -99,10 +115,55 @@ nav ul li a:hover {
 }
 
 /* トップ画像 */
-div .sample {
+.sample {
   width: 744px;
   height: 418px;
   background-color: #707070;
+}
+
+/* スキル */
+#skills {
+  background-color: #fff;
+  padding: 50px 5px;
+}
+
+#skills .skill-container {
+  display: flex;
+}
+
+#skills .skill-box {
+  width: 186px;
+  margin-top: 30px;
+  padding: 0 5px;
+}
+
+#skills h2 {
+  color: #4E7145;
+}
+
+#skills p {
+  padding: 16px 5px 0 5px;
+  text-align: justify;
+}
+
+#skills i {
+  font-size: 2.8rem;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 80px;
+  height: 80px;
+  padding-top: 20px;
+  text-align: center;
+  color: #fff;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #4E7145;
+}
+
+#skills .fa-html5 {
+  padding-top: 22px;
 }
 
 /* フッター */
@@ -113,66 +174,56 @@ div .sample {
 
 #contact h2 {
   color: #fff;
-  font-size: 2.3em;
-  font-weight: bold;
 }
 
 #contact ul {
   margin-top: 30px;
 }
 
-#contact ul li
-{
+#contact ul li {
   font-size: 2.8rem;
   display: inline-block;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   margin-right: 22px;
   text-align: center;
   vertical-align: top;
 }
 
-#contact ul li:last-child
-{
+#contact ul li:last-child {
   margin-right: 0;
 }
 
-#contact ul .github i
-{
+#contact ul .github i {
   margin-left: 2px;
 }
 
 #contact ul .facebook i,
-#contact ul .twitter i
-{
-    margin-left: 2px;
+#contact ul .twitter i {
+  margin-left: 2px;
 }
 
-#contact ul .github i
-{
-    margin-right: 1px;
+#contact ul .github i {
+  margin-right: 1px;
 }
 
-#contact ul a
-{
+#contact ul a {
   display: block;
   width: 80px;
   height: 80px;
   color: #707070;
   -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
   background-color: #fff;
 }
 
-#contact ul a:hover
-{
+#contact ul a:hover {
   background-color: #ddd;
 }
 
-footer
-{
+footer {
     padding: 10px 0;
     text-align: center;
     color: #4E7145;
