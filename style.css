@@ -66,9 +66,13 @@ a:hover {
 }
 
 /* サンプル画像 */
+.top-picture {
+  display: block;
+}
+
 .sample {
   display: block;
-  /* background-color: #897373; */
+  background-color: #707070;
 }
 
 /* ヘッダー */
@@ -136,7 +140,7 @@ nav ul li a:hover {
   position: relative;
 }
 
-#toppic .sample {
+#toppic .top-picture {
   width: 744px;
   height: 418px;
   background-image: url("images/top-pc.png");
@@ -505,7 +509,7 @@ footer {
   }
 
   /* トップ画像 */
-  #toppic .sample {
+  #toppic .top-picture {
     width: 100%;
     height: 0;
     padding-top: 58.1827957%;
@@ -521,5 +525,30 @@ footer {
     line-height: 10vw;
     top: 12vw;
     right: 17vw;
+  }
+
+  /* スキル */
+  #skills .skill-container {
+    display: inline-block;
+  }
+
+  #skills .skill-box {
+    width: 70vw;
+  }
+
+  #skills i {
+    font-size: 2.3rem;
+    -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 75px;
+    height: 75px;
+    padding-top: 20px;
+    text-align: center;
+    color: #fff;
+    -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+            border-radius: 50%;
+    background-color: #4E7145;
   }
 }
