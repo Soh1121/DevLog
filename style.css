@@ -559,4 +559,18 @@ footer {
     color: #fff;
     background-color: #4E7145;
   }
+
+  /* ブログ */
+  #blog .blog-container {
+    display: block;
+  }
+
+  #blog .blog-box {
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  #blog .button-readmore:hover {
+    background-color: #4E7145;
+  }
 }
