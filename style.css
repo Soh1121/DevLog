@@ -449,7 +449,7 @@ footer {
   }
 
   h2 {
-    font-size: 1.25em;
+    font-size: 2em;
   }
 
   h3 {
@@ -572,5 +572,27 @@ footer {
 
   #blog .button-readmore:hover {
     background-color: #4E7145;
+  }
+
+  /* フッター */
+  #contact li {
+    line-height: 1.7;
+  }
+
+  #contact ul .github i {
+    margin-left: 2px;
+  }
+
+  #contact ul .facebook i,
+  #contact ul .twitter i {
+    margin-left: 2px;
+  }
+
+  #contact ul .github i {
+    margin-right: 1px;
+  }
+
+  #contact ul a:hover {
+    background-color: #fff;
   }
 }
