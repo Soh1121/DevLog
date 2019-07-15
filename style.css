@@ -68,7 +68,7 @@ a:hover {
 /* サンプル画像 */
 .sample {
   display: block;
-  background-color: #897373;
+  /* background-color: #897373; */
 }
 
 /* ヘッダー */
@@ -91,6 +91,10 @@ nav {
   width: 100%;
   margin: auto;
   padding-right: 20px;
+}
+
+#responsive-btn {
+  display: none;
 }
 
 nav ul {
@@ -135,6 +139,8 @@ nav ul li a:hover {
 #toppic .sample {
   width: 744px;
   height: 418px;
+  background-image: url("images/top-pc.png");
+  background-size: cover;
 }
 
 #toppic p {
@@ -426,7 +432,7 @@ footer {
     background-color: #e3e3e3;
 }
 
-  /* タブレット縦以下のサイズの場合 */
+/* タブレット縦以下のサイズの場合 */
 @media (max-width: 767px) {
   /* 全般的なCSS */
   body {
@@ -496,5 +502,24 @@ footer {
   nav ul li a {
     width: 100%;
     height: 45px;
+  }
+
+  /* トップ画像 */
+  #toppic .sample {
+    width: 100%;
+    height: 0;
+    padding-top: 58.1827957%;
+
+    background-image: url("images/top-sp.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  #toppic p {
+    font-size: 7vw;
+    line-height: 10vw;
+    top: 12vw;
+    right: 17vw;
   }
 }
