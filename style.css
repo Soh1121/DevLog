@@ -66,9 +66,13 @@ a:hover {
 }
 
 /* サンプル画像 */
+.top-picture {
+  display: block;
+}
+
 .sample {
   display: block;
-  background-color: #897373;
+  background-color: #707070;
 }
 
 /* ヘッダー */
@@ -91,6 +95,10 @@ nav {
   width: 100%;
   margin: auto;
   padding-right: 20px;
+}
+
+#responsive-btn {
+  display: none;
 }
 
 nav ul {
@@ -132,9 +140,11 @@ nav ul li a:hover {
   position: relative;
 }
 
-#toppic .sample {
+#toppic .top-picture {
   width: 744px;
   height: 418px;
+  background-image: url("images/top-pc.png");
+  background-size: cover;
 }
 
 #toppic p {
@@ -180,7 +190,7 @@ nav ul li a:hover {
 #skills i {
   font-size: 2.8rem;
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
+    -moz-box-sizing: border-box;
           box-sizing: border-box;
   width: 80px;
   height: 80px;
@@ -188,7 +198,7 @@ nav ul li a:hover {
   text-align: center;
   color: #fff;
   -webkit-border-radius: 50%;
-     -moz-border-radius: 50%;
+    -moz-border-radius: 50%;
           border-radius: 50%;
   background-color: #4E7145;
 }
@@ -268,7 +278,7 @@ nav ul li a:hover {
   text-align: center;
   color: #fff;
   -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
+    -moz-border-radius: 4px;
           border-radius: 4px;
   background-color: #4E7145;
 }
@@ -346,7 +356,7 @@ nav ul li a:hover {
   text-align: center;
   color: #fff;
   -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
+    -moz-border-radius: 4px;
           border-radius: 4px;
   background-color: #4E7145;
 }
@@ -380,7 +390,7 @@ nav ul li a:hover {
   font-size: 2.8rem;
   display: inline-block;
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
+    -moz-box-sizing: border-box;
           box-sizing: border-box;
   margin-right: 22px;
   text-align: center;
@@ -410,7 +420,7 @@ nav ul li a:hover {
   height: 80px;
   color: #707070;
   -webkit-border-radius: 50%;
-     -moz-border-radius: 50%;
+    -moz-border-radius: 50%;
           border-radius: 50%;
   background-color: #fff;
 }
@@ -424,4 +434,165 @@ footer {
     text-align: center;
     color: #4E7145;
     background-color: #e3e3e3;
+}
+
+/* タブレット縦以下のサイズの場合 */
+@media (max-width: 767px) {
+  /* 全般的なCSS */
+  body {
+    font-size: .94em;
+    line-height: 1.5;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.15em;
+  }
+
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+
+  #nav {
+    position: relative;
+  }
+
+  #nav #responsive-btn {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    display: inline-block;
+    margin: 10px auto;
+    height: 40px;
+    width: 40px;
+    line-height: 36px;
+    border: solid 3px #fff;
+    border-radius: 10px;
+    color: #4E7145;
+    background-color: #fff;
+    font-size: 1.6em;
+  }
+
+  #close-btn {
+    font-size: 1.8rem;
+    display: none;
+  }
+
+  nav ul {
+    position: absolute;
+    top: 60px;
+    display: block;
+    width: 100%;
+    z-index: 100;
+    display: none;
+  }
+
+  nav ul li {
+    width: 100%;
+    height: 60px;
+    margin-right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: solid 1px #fff;
+  }
+
+  nav ul li a {
+    width: 100%;
+    height: 45px;
+  }
+
+  /* トップ画像 */
+  #toppic .top-picture {
+    width: 100%;
+    height: 0;
+    padding-top: 58.1827957%;
+
+    background-image: url("images/top-sp.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  #toppic p {
+    font-size: 7vw;
+    line-height: 10vw;
+    top: 12vw;
+    right: 17vw;
+  }
+
+  /* スキル */
+  #skills .skill-container {
+    display: inline-block;
+  }
+
+  #skills .skill-box {
+    width: 70vw;
+  }
+
+  #skills i {
+    font-size: 2.3rem;
+    width: 75px;
+    height: 75px;
+  }
+
+  /* ポートフォリオ */
+  #portfolio .works-box {
+    position: static;
+    display: block;
+    margin: 0 auto;
+    margin-top: 16px;
+  }
+
+  #portfolio .works-box a .works-box-inner {
+    display: inline-block;
+    width: 100%;
+  }
+
+  #portfolio .works-box a .works-box-inner .button-readmore:hover {
+    color: #fff;
+    background-color: #4E7145;
+  }
+
+  /* ブログ */
+  #blog .blog-container {
+    display: block;
+  }
+
+  #blog .blog-box {
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  #blog .button-readmore:hover {
+    background-color: #4E7145;
+  }
+
+  /* フッター */
+  #contact li {
+    line-height: 1.7;
+  }
+
+  #contact ul .github i {
+    margin-left: 2px;
+  }
+
+  #contact ul .facebook i,
+  #contact ul .twitter i {
+    margin-left: 2px;
+  }
+
+  #contact ul .github i {
+    margin-right: 1px;
+  }
+
+  #contact ul a:hover {
+    background-color: #fff;
+  }
 }
