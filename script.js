@@ -15,5 +15,12 @@ document.getElementById('responsive-btn').addEventListener('click', function (e)
     } else {
         close_btn.style.display = "none"
     }
-    console.log(nav.style.display)
 })
+
+jQuery('#nav').on('click', function () {
+    if (jQuery('.menu').css('display') === 'block') {
+        jQuery('.menu').slideUp('10000');
+    } else {
+        jQuery('.menu').slideDown('10000');
+    }
+});
