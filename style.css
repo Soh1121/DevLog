@@ -37,6 +37,10 @@ h3 {
   text-align: right;
 }
 
+.left {
+  text-align: left;
+}
+
 .leftcol {
   float: left;
 }

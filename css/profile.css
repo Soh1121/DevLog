@@ -50,3 +50,24 @@
     padding-left: 30px;
     text-align: left;
 }
+
+#books {
+    background-color: #4E7145;
+    padding: 50px 5px;
+}
+
+#books h2 {
+  color: #fff;
+}
+
+#books a {
+    color: #fff;
+}
+
+#books li {
+    padding: 3px 0;
+}
+
+#books #book-list {
+    padding: 30px 30px 0 30px;
+}
