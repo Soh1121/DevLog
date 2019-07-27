@@ -71,3 +71,20 @@
 #books #book-list {
     padding: 30px 30px 0 30px;
 }
+
+#lessons {
+    background-color: #fff;
+    padding: 50px 5px;
+}
+
+#lessons h2 {
+  color: #4E7145;
+}
+
+#lessons #techacademy {
+    padding: 30px 30px 0 30px;
+}
+
+#lessons #udemy {
+    padding: 10px 30px 0 30px;
+}
