@@ -163,6 +163,34 @@ footer {
   color: #888;
 }
 
+.pagenav a {
+  padding: 5px 10px;
+  webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+         border-radius: 10px;
+  border: solid 1px #ccc;
+  color: #666
+  text-decoration: none;
+}
+
+.pagenav a:hover {
+  text-decoration: none;
+}
+
+.pagenav .old a {
+  float: left;
+}
+
+.pagenav .new a {
+  float: right;
+}
+
+.pagenav {
+  overflow: hidden;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 /* タブレット縦以下のサイズの場合 */
 @media (max-width: 767px) {
   /* 全般的なCSS */
