@@ -154,6 +154,15 @@ footer {
     background-color: #e3e3e3;
 }
 
+/* 記事一覧 */
+.postinfo .postcat {
+  margin-left: 20px;
+}
+
+.postinfo i {
+  color: #888;
+}
+
 /* タブレット縦以下のサイズの場合 */
 @media (max-width: 767px) {
   /* 全般的なCSS */
