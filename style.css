@@ -197,7 +197,22 @@ footer {
   overflow: hidden;
   margin-top: 30px;
   margin-bottom: 30px;
+  clear: both;
 }
+
+.wp-block-image {
+  margin-top: 30px;
+}
+
+.wp-block-image img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 90% !important;
+  height: auto;
+  border: 0;
+}
+
 
 /* タブレット縦以下のサイズの場合 */
 @media (max-width: 767px) {
@@ -277,5 +292,9 @@ footer {
 
   nav ul li:hover {
     border-bottom: 1px solid #fff;
+  }
+
+  .wp-block-image img {
+    max-width: 100%;
   }
 }
