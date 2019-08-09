@@ -84,6 +84,10 @@
     </span>
   <?php endif; ?>
   </div>
+
+  <ul>
+  <?php dynamic_sidebar(); ?>
+  </ul>
   </div>
 
   <footer>
