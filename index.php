@@ -71,6 +71,17 @@
           <i class="fas fa-folder-open"></i>
           <?php the_category(','); ?>
         </span>
+
+        <span class="postcom">
+          <i class="fas fa-comments"></i>
+          <a href="<?php comments_link(); ?>">
+            <?php comments_number(
+              'コメント',
+              'コメント1件',
+              'コメント（%件）'
+            ); ?>
+          </a>
+        </span>
       </div>
       <?php the_content(); ?>
       <?php if (is_single()): ?>
@@ -84,6 +95,7 @@
         </span>
       </div>
       <?php endif;?>
+      <?php comments_template(); ?>
     </article>
     <?php endwhile; endif; ?>
 
