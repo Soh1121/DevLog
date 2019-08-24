@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>記事一覧 | <?php bloginfo('name'); ?> - <?php bloginfo('description'); ?></title>
+  <title><?php wp_title(' | ', true, 'right'); bloginfo('name'); ?> - <?php bloginfo('description'); ?></title>
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/destyle.css">
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/toppage.css">
@@ -44,6 +44,13 @@
     <h1 class="archive-title">
       <i class="fas fa-folder-open"></i>
       『<?php single_cat_title(); ?>』に関する記事
+    </h1>
+    <?php endif; ?>
+
+    <?php if(is_month()): ?>
+    <h1 class="archive-title">
+      <i class="far fa-clock"></i>
+      <?php echo get_the_date('Y年n月'); ?>に投稿した記事
     </h1>
     <?php endif; ?>
 
