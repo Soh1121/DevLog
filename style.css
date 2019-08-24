@@ -213,6 +213,56 @@ footer {
   border: 0;
 }
 
+/* メニュー */
+.blogmenu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.blogmenu .widget {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #e8e8e8;
+}
+
+.blogmenu .widgettitle {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-right: solid 10px #4E7145;
+  color: #4E7145;
+  font-size: 1.3em;
+}
+
+.blogmenu li a {
+  color: #666;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+.blogmenu li a:hover {
+  color: #000;
+}
+
+.blogmenu li {
+  color: #4E7145;
+}
+
+/* 見出し */
+.archive-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #666;
+  background-color: #eee;
+  font-size: 1.3em;
+  font-weight: normal;
+}
+
+.archive-title i {
+  padding: 15px;
+  color: #fff;
+  background-color: #4E7145;
+}
 
 /* タブレット縦以下のサイズの場合 */
 @media (max-width: 767px) {

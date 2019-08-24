@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>記事一覧 | <?php bloginfo('name'); ?> - <?php bloginfo('description'); ?></title>
+  <title><?php wp_title(' | ', true, 'right'); bloginfo('name'); ?> - <?php bloginfo('description'); ?></title>
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/destyle.css">
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/toppage.css">
@@ -40,50 +40,78 @@
   </header>
 
   <div class="container">
-  <?php if (have_posts()): while (have_posts()): the_post(); ?>
-    <article <?php post_class(); ?>>
-  <?php if(is_single()): ?>
-    <h2><?php the_title(); ?></h2>
-  <?php else: ?>
-    <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-  <?php endif; ?>
-  <div class="postinfo">
-    <time datetime="<?php echo get_the_date('Y-m-d')?>">
-    <i class="far fa-clock"></i>
-    <?php echo get_the_date(); ?>
-    </time>
-
-    <span class="postcat">
+    <?php if(is_category()): ?>
+    <h1 class="archive-title">
       <i class="fas fa-folder-open"></i>
-      <?php the_category(','); ?>
-    </span>
-  </div>
-  <?php the_content(); ?>
-  <?php if (is_single()): ?>
-  <div class="pagenav">
-    <span class="old">
-      <?php previous_post_link('%link', '<i class="fas fa-chevron-circle-left"></i> %title'); ?>
-    </span>
+      『<?php single_cat_title(); ?>』に関する記事
+    </h1>
+    <?php endif; ?>
 
-    <span class="new">
-      <?php next_post_link('%link', '%title <i class="fas fa-chevron-circle-right"></i>'); ?>
-    </span>
-  </div>
-  <?php endif;?>
-  </article>
-  <?php endwhile; endif; ?>
+    <?php if(is_month()): ?>
+    <h1 class="archive-title">
+      <i class="far fa-clock"></i>
+      <?php echo get_the_date('Y年n月'); ?>に投稿した記事
+    </h1>
+    <?php endif; ?>
 
-  <?php if($wp_query->max_num_pages > 1): ?>
-  <div class="pagenav">
-    <span class="old">
-    <?php next_posts_link('<i class="fas fa-chevron-circle-left"></i> 古い記事 '); ?>
-    </span>
+    <?php if (have_posts()): while (have_posts()): the_post(); ?>
+    <article <?php post_class(); ?>>
+      <?php if(is_single()): ?>
+      <h2><?php the_title(); ?></h2>
+      <?php else: ?>
+      <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+      <?php endif; ?>
+      <div class="postinfo">
+        <time datetime="<?php echo get_the_date('Y-m-d')?>">
+        <i class="far fa-clock"></i>
+        <?php echo get_the_date(); ?>
+        </time>
 
-    <span class="new">
-    <?php previous_posts_link(' 新しい記事 <i class="fas fa-chevron-circle-right"></i>'); ?>
-    </span>
-  <?php endif; ?>
-  </div>
+        <span class="postcat">
+          <i class="fas fa-folder-open"></i>
+          <?php the_category(','); ?>
+        </span>
+      </div>
+      <?php the_content(); ?>
+      <?php if (is_single()): ?>
+      <div class="pagenav">
+        <span class="old">
+          <?php previous_post_link('%link', '<i class="fas fa-chevron-circle-left"></i> %title'); ?>
+        </span>
+
+        <span class="new">
+          <?php next_post_link('%link', '%title <i class="fas fa-chevron-circle-right"></i>'); ?>
+        </span>
+      </div>
+      <?php endif;?>
+    </article>
+    <?php endwhile; endif; ?>
+
+    <?php if($wp_query->max_num_pages > 1): ?>
+    <div class="pagenav">
+      <span class="old">
+        <?php next_posts_link('<i class="fas fa-chevron-circle-left"></i> 古い記事 '); ?>
+      </span>
+
+      <span class="new">
+        <?php previous_posts_link(' 新しい記事 <i class="fas fa-chevron-circle-right"></i>'); ?>
+      </span>
+      <?php endif; ?>
+    </div>
+
+    <div class="blogmenu">
+      <ul>
+        <?php dynamic_sidebar(); ?>
+
+        <li class="widget">
+          <ul>
+            <li>
+              <a href="<?php bloginfo('rss2_url'); ?>"><i class="fas fa-rss-square"></i> RSS</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
   </div>
 
   <footer>
