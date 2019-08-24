@@ -22,6 +22,10 @@ h1 {
   font-family: 'Pacifico';
 }
 
+h1 a:hover {
+  text-decoration: none;
+}
+
 h2 {
   font-size: 2.3em;
   font-weight: bold;
