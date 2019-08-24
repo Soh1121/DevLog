@@ -167,6 +167,10 @@ footer {
   margin-left: 20px;
 }
 
+.postinfo .postcom {
+  margin-left: 20px;
+}
+
 .postinfo i {
   color: #888;
 }
