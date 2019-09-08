@@ -5,12 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>DevLog - Sohのエンジニアブログ</title>
-  <link rel="stylesheet" href="css/destyle.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="css/toppage.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/destyle.css">
+  <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/toppage.css">
   <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/879fc12ee5.js"></script>
-
 </head>
 <body>
   <header>
