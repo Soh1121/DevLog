@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico&display=swap">
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
   <script src="https://kit.fontawesome.com/879fc12ee5.js"></script>
+  <?php wp_head(); ?>
 </head>
 <body>
   <header>
