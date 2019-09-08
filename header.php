@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/destyle.css">
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/toppage.css">
-  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico&display=swap">
+  <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
   <script src="https://kit.fontawesome.com/879fc12ee5.js"></script>
 </head>
 <body>
