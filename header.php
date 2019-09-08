@@ -17,7 +17,7 @@
   <header>
     <div class="container">
       <div id="logo" class="leftcol">
-        <h1>DevLog</h1>
+        <h1><a href="<?php echo home_url(); ?>">DevLog</a></h1>
       </div>
       <div id="nav">
         <div id="responsive-btn">
@@ -30,9 +30,9 @@
         </div>
         <nav id="menu">
           <ul class="menu">
-            <li><a href="profile.html">PROFILE</a></li>
-            <li><a href="#">BLOG</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="<?php echo home_url(); ?>/profile/">PROFILE</a></li>
+            <li><a href="<?php echo home_url(); ?>/profile/">BLOG</a></li>
+            <li><a href="<?php echo home_url(); ?>#contact">CONTACT</a></li>
           </ul>
         </nav>
       </div>
