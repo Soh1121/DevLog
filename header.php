@@ -13,7 +13,7 @@
   <script src="https://kit.fontawesome.com/879fc12ee5.js"></script>
   <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
   <header>
     <div class="container">
       <div id="logo" class="leftcol">
