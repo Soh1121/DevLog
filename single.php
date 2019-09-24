@@ -7,6 +7,7 @@
           <?php the_content(); ?>
         </section>
       <?php endwhile; ?>
+      <?php comments_template('format=html5'); ?>
     <?php else: ?>
       <h2>投稿が見つかりません。</h2>
     <?php endif; ?>
