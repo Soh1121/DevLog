@@ -7,10 +7,12 @@
 
 <div class="postinfo">
   <time datetime="<?php echo get_the_date('Y-m-d') ?>">
+    <i class="far fa-clock"></i>
     <?php echo get_the_date(); ?>
   </time>
 
   <span class="postcat">
+    <i class="far fa-folder-open"></i>
     <?php the_category(', '); ?>
   </sapn>
 </div>
