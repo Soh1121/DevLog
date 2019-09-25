@@ -5,7 +5,9 @@
 <article <?php post_class(); ?>>
 <h1><?php the_title(); ?></h1>
 
-<?php echo get_the_date(); ?>
+<time datetime="<?php echo get_the_date('Y-m-d') ?>">
+  <?php echo get_the_date(); ?>
+</time>
 
 <?php the_content(); ?>
 </article>
