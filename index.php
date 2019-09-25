@@ -5,9 +5,15 @@
 <article <?php post_class(); ?>>
 <h1><?php the_title(); ?></h1>
 
-<time datetime="<?php echo get_the_date('Y-m-d') ?>">
-  <?php echo get_the_date(); ?>
-</time>
+<div class="postinfo">
+  <time datetime="<?php echo get_the_date('Y-m-d') ?>">
+    <?php echo get_the_date(); ?>
+  </time>
+
+  <span class="postcat">
+    <?php the_category(', '); ?>
+  </sapn>
+</div>
 
 <?php the_content(); ?>
 </article>
