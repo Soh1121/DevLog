@@ -69,6 +69,12 @@ Template Name: トップページ
     </section>
 
     <?php
+    // -------- WP_query終了-----------
+    wp_reset_postdata();
+    endif;
+    ?>
+
+    <?php
     // --- 新着ブログを3件表示 ---
     $args = array(
       'category_name'   =>  'studylog', // ポートフォリオ以外のカテゴリを記述
@@ -80,22 +86,30 @@ Template Name: トップページ
 
     <section id="blog">
       <h2>blog</h2>
-      <?php while ($the_query->have_posts()): $the_query->the_post();?>
       <div class="blog-container">
+        <?php while ($the_query->have_posts()): $the_query->the_post();?>
         <div class="blog-box">
           <a href="<?php the_permalink(); ?>">
+            <!-- TODO:アイキャッチを表示 -->
             <div class="sample"></div>
             <h3><?php the_title(); ?></h3>
             <p class="right"><small><?php the_time('Y.m.j'); ?></small></p>
           </a>
         </div>
+        <?php endwhile; ?>
       </div>
-    <?php endwhile; ?>
       <div class="button">
         <!-- TODO:記事一覧ページにリンクを張る -->
         <a href="#""><span class="button-readmore uppercase">Read More</span></a>
       </div>
     </section>
+
+    <?php
+    // -------- 新着情報WP_query終了-----------
+    wp_reset_postdata();
+    endif;
+    ?>
+
     <section id="contact">
       <h2>contact</h2>
       <ul>
