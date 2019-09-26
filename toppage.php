@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: トップページ
+*/
+?>
+
 <?php get_header(); ?>
 
   <main class="container center">
