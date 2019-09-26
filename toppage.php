@@ -40,7 +40,7 @@ Template Name: トップページ
     <?php
     // --- 新着ポートフォリオを3件表示 ---
     $args = array(
-      'category_name'   =>  'studylog',
+      'category_name'   =>  'portfolio',
       'posts_per_page'  =>  3
     );
     $the_query = new WP_Query($args);
@@ -67,33 +67,33 @@ Template Name: トップページ
         <a href="<?php echo home_url(); ?>/category/portfolio/"><span class="button-readmore uppercase">Read More</span></a>
       </div>
     </section>
+
+    <?php
+    // --- 新着ブログを3件表示 ---
+    $args = array(
+      'category_name'   =>  'studylog', // ポートフォリオ以外のカテゴリを記述
+      'posts_per_page'  =>  3
+    );
+    $the_query = new WP_Query($args);
+    if($the_query->have_posts()):
+    ?>
+
     <section id="blog">
       <h2>blog</h2>
+      <?php while ($the_query->have_posts()): $the_query->the_post();?>
       <div class="blog-container">
         <div class="blog-box">
-          <a href="#">
+          <a href="<?php the_permalink(); ?>">
             <div class="sample"></div>
-            <h3>タイトル</h3>
-            <p class="right"><small>2019.07.XX</small></p>
-          </a>
-        </div>
-        <div class="blog-box">
-          <a href="#">
-            <div class="sample"></div>
-            <h3>タイトル</h3>
-            <p class="right"><small>2019.07.XX</small></p>
-          </a>
-        </div>
-        <div class="blog-box">
-          <a href="#">
-            <div class="sample"></div>
-            <h3>タイトル</h3>
-            <p class="right"><small>2019.07.XX</small></p>
+            <h3><?php the_title(); ?></h3>
+            <p class="right"><small><?php the_time('Y.m.j'); ?></small></p>
           </a>
         </div>
       </div>
+    <?php endwhile; ?>
       <div class="button">
-        <a href="#"><span class="button-readmore uppercase">Read More</span></a>
+        <!-- TODO:記事一覧ページにリンクを張る -->
+        <a href="#""><span class="button-readmore uppercase">Read More</span></a>
       </div>
     </section>
     <section id="contact">
