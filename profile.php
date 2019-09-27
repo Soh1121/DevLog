@@ -131,7 +131,7 @@ Template Name: プロフィール
             <a href="https://www.udemy.com/ruby-bitcoin/" target="_blank" rel="noopenner">Rubyで作る！ビットコイン自動売買システム／Yuki Sako</a>
           </li>
           <li>
-            <a href="https://www.udemy.com/ethical-hacking-jpn1/" target="_blank" rel="noopenner">【情報セキュリティ】Ethical Hacking：ホワイトハッカー入門／阿部ひろき</a>
+            <a href="https://www.udemy.com/ethical-hacking-jpn1/" target="_blank" rel="noopenner">【情報セキュリティ】Ethical Hacking：ホワイトハッカー入門／阿部 ひろき</a>
           </li>
         </ul>
       </div>
