@@ -11,7 +11,7 @@ Template Name: プロフィール
       <h2>Profile</h2>
       <div class="wrapper">
         <div class="area" id="pic">
-          <img src="../images/Soh-icon.png" alt="Sohの似顔絵イラスト">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/Soh-icon.png" alt="Sohの似顔絵イラスト">
         </div>
         <div class="area">
           <table>
