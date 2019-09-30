@@ -12,3 +12,12 @@ register_sidebar(array(
   'before_title'  => '<h3 class="widget-title">',
   'after_title'   => '</h3>'
 ));
+
+function post_has_archive( $args, $post_type ) {
+  if ( 'post' == $post_type ) {
+    $args['rewrite'] = true;
+    $args['has_archive'] = 'list';
+  }
+  return $args;
+}
+add_filter( 'register_post_type_args', 'post_has_archive', 10, 2 );
