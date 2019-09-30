@@ -32,7 +32,7 @@
         <nav id="menu">
           <ul class="menu">
             <li><a href="<?php echo home_url(); ?>/profile/">PROFILE</a></li>
-            <li><a href="<?php echo home_url(); ?>/profile/">BLOG</a></li>
+            <li><a href="<?php echo home_url(); ?>/list/">BLOG</a></li>
             <li><a href="<?php echo home_url(); ?>#contact">CONTACT</a></li>
           </ul>
         </nav>
