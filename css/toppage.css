@@ -182,9 +182,9 @@
   margin-right: 30px;
 }
 
-#blog .sample {
-  width: 218px;
-  height: 140px;
+#blog .eyecatch {
+  margin-bottom: 10px;
+  width: 100%;
 }
 
 #blog h2 {

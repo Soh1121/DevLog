@@ -90,8 +90,13 @@ Template Name: トップページ
         <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
           <div class="blog-box">
             <a href="<?php the_permalink(); ?>">
-              <!-- TODO:アイキャッチを表示 -->
-              <div class="sample"></div>
+              <div class="eyecatch">
+                <?php if (has_post_thumbnail()) : ?>
+                  <?php the_post_thumbnail('thumbnail'); ?>
+                <?php else : ?>
+                  <img src="<?php bloginfo('template_url'); ?>/images/noimage.png" alt="アイキャッチなし" />
+                <?php endif; ?>
+              </div>
               <h3><?php the_title(); ?></h3>
               <p class="right"><small><?php the_time('Y.m.j'); ?></small></p>
             </a>
@@ -99,7 +104,6 @@ Template Name: トップページ
         <?php endwhile; ?>
       </div>
       <div class="button">
-        <!-- TODO:記事一覧ページにリンクを張る -->
         <a href="<?php echo home_url(); ?>/list/"><span class=" button-readmore uppercase">Read More</span></a>
       </div>
     </section>
