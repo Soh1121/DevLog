@@ -37,18 +37,17 @@ Template Name: トップページ
     </div>
   </section>
 
-  <?php
-  // --- 新着ポートフォリオを3件表示 ---
-  $args = array(
-    'category_name'   =>  'portfolio',
-    'posts_per_page'  =>  3
-  );
-  $the_query = new WP_Query($args);
-  if ($the_query->have_posts()) :
-    ?>
-
-    <section id="portfolio">
-      <h2>portfolio</h2>
+  <section id="portfolio">
+    <h2>portfolio</h2>
+    <?php
+    // --- 新着ポートフォリオを3件表示 ---
+    $args = array(
+      'category_name'   =>  'portfolio',
+      'posts_per_page'  =>  3
+    );
+    $the_query = new WP_Query($args);
+    if ($the_query->have_posts()) :
+      ?>
       <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
         <div class="works-box">
           <a href="<?php the_permalink(); ?>">
@@ -65,14 +64,16 @@ Template Name: トップページ
       <?php endwhile; ?>
       <div class="button">
         <a href="<?php echo home_url(); ?>/category/portfolio/"><span class="button-readmore uppercase">Read More</span></a>
-      </div>
-    </section>
 
-  <?php
-    // -------- WP_query終了-----------
-    wp_reset_postdata();
-  endif;
-  ?>
+      <?php else :?>
+        <h3 class="white">Comming Soon</h3>
+      <?php
+        // -------- WP_query終了-----------
+        wp_reset_postdata();
+        endif;
+      ?>
+      </div>
+  </section>
 
   <?php
   // --- 新着ブログを3件表示 ---
