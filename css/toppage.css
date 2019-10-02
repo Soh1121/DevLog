@@ -84,6 +84,10 @@
   padding-top: 16px;
 }
 
+#portfolio .white {
+  color: #fff;
+}
+
 #portfolio .sample {
   width: 248px;
   height: 140px;
