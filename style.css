@@ -76,6 +76,10 @@ a:hover {
   text-decoration: underline;
 }
 
+h1 a:hover {
+  text-decoration: none;
+}
+
 /* サンプル画像 */
 .top-picture {
   display: block;
