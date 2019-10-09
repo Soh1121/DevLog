@@ -1,0 +1,47 @@
+#entry {
+    padding: 50px;
+    background-color: #fff;
+    text-align: left;
+}
+
+#entry .entry-title {
+    color: #707070;
+    font-family: 'Karla',YuGothic,"Yu Gothic","Hiragino Sans","ヒラギノ角ゴシック","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+    font-weight: bold;
+}
+
+#entry .postinfo {
+    text-align: right;
+}
+
+#entry p {
+    margin: 15px 0 15px 0;
+    font-size: 1em;
+    line-height: 1.75em;
+}
+
+#entry h2 {
+    margin-top: 50px;
+    padding: .5em .5em .5em .5em;
+    border-radius: 5px;
+    background: #4E7145;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#entry h3 {
+    margin-top: 30px;
+    padding: .5em .5em .5em .5em;
+    border-left: solid #4E7145;
+    color: #707070;
+    font-weight: bold;
+}
+
+@media (max-width: 767px) {
+    #entry {
+        padding: 5%;
+        background-color: #fff;
+        text-align: left;
+    }
+}
