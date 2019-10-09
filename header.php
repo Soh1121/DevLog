@@ -23,7 +23,7 @@
   <header>
     <div class="container">
       <div id="logo" class="leftcol">
-        <h1><a href="<?php echo home_url(); ?>">DevLog</a></h1>
+        <h1 class="page-title"><a href="<?php echo home_url(); ?>">DevLog</a></h1>
       </div>
       <div id="nav">
         <div id="responsive-btn">
