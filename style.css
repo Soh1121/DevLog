@@ -259,4 +259,8 @@ footer {
   nav ul li:hover {
     border-bottom: 1px solid #fff;
   }
+
+  .pagenav {
+    margin: 10px 0;
+  }
 }
