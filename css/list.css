@@ -23,6 +23,7 @@
 #list h1 {
     padding: 10px 0 10px 10px;
     font-size: 1.2em;
+    font-weight: bold;
     color: #707070;
 }
 
