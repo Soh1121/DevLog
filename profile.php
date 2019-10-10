@@ -6,62 +6,60 @@ Template Name: プロフィール
 
 <?php get_header(); ?>
 
-  <main class="container center">
-    <section id="profile">
-      <h2>Profile</h2>
-      <div class="wrapper">
-        <div class="area" id="pic">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/Soh-icon.png" alt="Sohの似顔絵イラスト">
-        </div>
-        <div class="area">
-          <table>
-            <tr>
-              <th>名前</th>
-              <td>Soichi SATO</td>
-            </tr>
-            <tr>
-              <th>出身地</th>
-              <td>青森県青森市</td>
-            </tr>
-            <tr>
-              <th>居住地</th>
-              <td>東京都</td>
-            </tr>
-            <tr>
-              <th>生年月日</th>
-              <td>1989年1月21日</td>
-            </tr>
-            <tr>
-              <th>資格</th>
-              <td>準中型自動車（）</td>
-            </tr>
-            <tr>
-              <th></th>
-              <td>基本情報技術者（）</td>
-            </tr>
-            <tr>
-              <th></th>
-              <td>第一級陸上無線技術士（）</td>
-            </tr>
-            <tr>
-              <th></th>
-              <td>応用情報技術者（）</td>
-            </tr>
-          </table>
-        </div>
+<main class="container center">
+  <section id="profile">
+    <h2>Profile</h2>
+    <div class="wrapper">
+      <div class="area" id="pic">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/Soh-icon.png" alt="Sohの似顔絵イラスト">
       </div>
-    </section>
-    <section id="books">
-      <h2>List of read books</h2>
-      <div id="book-list" class="left">
+      <div class="area">
+        <table>
+          <tr>
+            <th>名前</th>
+            <td>Soichi SATO</td>
+          </tr>
+          <tr>
+            <th>出身地</th>
+            <td>青森県青森市</td>
+          </tr>
+          <tr>
+            <th>居住地</th>
+            <td>東京都</td>
+          </tr>
+          <tr>
+            <th>生年月日</th>
+            <td>1989年1月21日</td>
+          </tr>
+          <tr>
+            <th>資格</th>
+            <td>準中型自動車（2007年9月）</td>
+          </tr>
+          <tr>
+            <th></th>
+            <td>基本情報技術者（2012年11月）</td>
+          </tr>
+          <tr>
+            <th></th>
+            <td>第一級陸上無線技術士（2014年9月）</td>
+          </tr>
+          <tr>
+            <th></th>
+            <td>応用情報技術者（2019年6月）</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+  <section id="books">
+    <h2>List of read books</h2>
+    <div id="book-list" class="left">
       <ul>
         <li>
-          <a href="https://www.amazon.co.jp/Web%E3%82%92%E6%94%AF%E3%81%88%E3%82%8B%E6%8A%80%E8%A1%93-HTTP%E3%80%81URI%E3%80%81HTML%E3%80%81%E3%81%9D%E3%81%97%E3%81%A6REST-WEB-PRESS-plus/dp/4774142042/ref=sr_1_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=OF13UXX1CL4G&keywords=web%E3%82%92%E6%94%AF%E3%81%88%E3%82%8B%E6%8A%80%E8%A1%93&qid=1564213610&s=gateway&sprefix=web%E3%82%92%E3%81%95%2Caps%2C259&sr=8-1"
-          target="_blank" rel="noopenner">Webを支える技術 ／山本陽平 著</a>
+          <a href="https://www.amazon.co.jp/Web%E3%82%92%E6%94%AF%E3%81%88%E3%82%8B%E6%8A%80%E8%A1%93-HTTP%E3%80%81URI%E3%80%81HTML%E3%80%81%E3%81%9D%E3%81%97%E3%81%A6REST-WEB-PRESS-plus/dp/4774142042/ref=sr_1_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=OF13UXX1CL4G&keywords=web%E3%82%92%E6%94%AF%E3%81%88%E3%82%8B%E6%8A%80%E8%A1%93&qid=1564213610&s=gateway&sprefix=web%E3%82%92%E3%81%95%2Caps%2C259&sr=8-1" target="_blank" rel="noopenner">Webを支える技術 ／山本陽平 著</a>
         </li>
         <li>
-          <a href="https://www.amazon.co.jp/%E3%83%AA%E3%83%BC%E3%83%80%E3%83%96%E3%83%AB%E3%82%B3%E3%83%BC%E3%83%89-%E2%80%95%E3%82%88%E3%82%8A%E8%89%AF%E3%81%84%E3%82%B3%E3%83%BC%E3%83%89%E3%82%92%E6%9B%B8%E3%81%8F%E3%81%9F%E3%82%81%E3%81%AE%E3%82%B7%E3%83%B3%E3%83%97%E3%83%AB%E3%81%A7%E5%AE%9F%E8%B7%B5%E7%9A%84%E3%81%AA%E3%83%86%E3%82%AF%E3%83%8B%E3%83%83%E3%82%AF-Theory-practice-Boswell/dp/4873115655/ref=pd_bxgy_14_img_2/357-4532857-9704947?_encoding=UTF8&pd_rd_i=4873115655&pd_rd_r=0edddc7f-c06a-4b83-a563-7e9337f3fac3&pd_rd_w=NHEVG&pd_rd_wg=YHbCc&pf_rd_p=2d39d87c-5ff4-47a9-a2d0-79fb936a2d97&pf_rd_r=V944849E2B1JNB1N0XWR&psc=1&refRID=V944849E2B1JNB1N0XWR"
-          target="_blank" rel="noopenner">リーダブルコード／ Dustin Boswell・Trevor Foucher 著</a>
+          <a href="https://www.amazon.co.jp/%E3%83%AA%E3%83%BC%E3%83%80%E3%83%96%E3%83%AB%E3%82%B3%E3%83%BC%E3%83%89-%E2%80%95%E3%82%88%E3%82%8A%E8%89%AF%E3%81%84%E3%82%B3%E3%83%BC%E3%83%89%E3%82%92%E6%9B%B8%E3%81%8F%E3%81%9F%E3%82%81%E3%81%AE%E3%82%B7%E3%83%B3%E3%83%97%E3%83%AB%E3%81%A7%E5%AE%9F%E8%B7%B5%E7%9A%84%E3%81%AA%E3%83%86%E3%82%AF%E3%83%8B%E3%83%83%E3%82%AF-Theory-practice-Boswell/dp/4873115655/ref=pd_bxgy_14_img_2/357-4532857-9704947?_encoding=UTF8&pd_rd_i=4873115655&pd_rd_r=0edddc7f-c06a-4b83-a563-7e9337f3fac3&pd_rd_w=NHEVG&pd_rd_wg=YHbCc&pf_rd_p=2d39d87c-5ff4-47a9-a2d0-79fb936a2d97&pf_rd_r=V944849E2B1JNB1N0XWR&psc=1&refRID=V944849E2B1JNB1N0XWR" target="_blank" rel="noopenner">リーダブルコード／ Dustin Boswell・Trevor Foucher 著</a>
         </li>
         <li>
           <a href="https://www.amazon.co.jp/%E3%81%8A%E3%81%86%E3%81%A1%E3%81%A7%E5%AD%A6%E3%81%B9%E3%82%8B%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9%E3%81%AE%E3%81%8D%E3%81%BB%E3%82%93-%E3%83%9F%E3%83%83%E3%82%AF/dp/479813516X/ref=sr_1_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&keywords=%E3%81%8A%E3%81%86%E3%81%A1%E3%81%A7%E5%AD%A6%E3%81%B9%E3%82%8B%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9%E3%81%AE%E5%9F%BA%E6%9C%AC&qid=1564214270&s=books&sr=1-1" target="_blank" rel="noopenner">おうちで学べるデータベースの基本／ミック・木村 明治 著</a>
@@ -94,47 +92,47 @@ Template Name: プロフィール
           <a href="https://www.amazon.co.jp/%E3%80%8C%E3%83%97%E3%83%AD%E3%81%AB%E3%81%AA%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AEWeb%E6%8A%80%E8%A1%93%E5%85%A5%E9%96%80%E3%80%8D-%E2%80%95%E2%80%95%E3%81%AA%E3%81%9C%E3%80%81%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AFWeb%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%82%92%E9%96%8B%E7%99%BA%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E3%81%AE%E3%81%8B-%E5%B0%8F%E6%A3%AE-%E8%A3%95%E4%BB%8B/dp/4774142352/ref=pd_sbs_14_2/357-4532857-9704947?_encoding=UTF8&pd_rd_i=4774142352&pd_rd_r=68a2c4a6-5622-449a-b4b0-4fd4456b0329&pd_rd_w=ecJ8n&pd_rd_wg=YdBHL&pf_rd_p=ad2ea29d-ea11-483c-9db2-6b5875bb9b73&pf_rd_r=Z2NPXSAAWYG03XVKT7EM&psc=1&refRID=Z2NPXSAAWYG03XVKT7EM" target="_blank" rel="noopenner">「プロになるためのWeb技術入門」 ――なぜ、あなたはWebシステムを開発できないのか／小森 裕介 著</a>
         </li>
       </ul>
-      </div>
-    </section>
-    <section id="lessons">
-      <h2>List of learned<br>online courses</h2>
-      <div id="techacademy" class="left">
-        <h3>TechAcademy</h3>
-        <ul>
-          <li>
-            <a href="https://techacademy.jp/webdesign-bootcamp" target="_blank" rel="noopenner">Webデザインコース</a>
-          </li>
-          <li>
-            <a href="https://techacademy.jp/wordpress-bootcamp" target="_blank" rel="noopenner">WordPressコース</a>
-          </li>
-        </ul>
-      </div>
-      <div id="udemy" class="left">
-        <h3>Udemy</h3>
-        <ul>
-          <li>
-            <a href="https://www.udemy.com/intro_git/" target="_blank" rel="noopenner">はじめてのGitとGitHub／山浦 清透</a>
-          </li>
-          <li>
-            <a href="https://www.udemy.com/unscared_git/" target="_blank" rel="noopenner">もう怖くないGit！チーム開発で必要なGitを完全マスター／山浦 清透</a>
-          </li>
-          <li>
-            <a href="https://www.udemy.com/5dayslinux/" target="_blank" rel="noopenner">【5日でできる】はじめてのLinux入門（LPIC Level1対応）／井上 博樹</a>
-          </li>
-          <li>
-            <a href="https://www.udemy.com/linux_vps_3days/" target="_blank" rel="noopenner">【3日でできる】はじめてのLinuxサーバー構築入門【CentOS7・PHP７・Docker対応】／井上 博樹</a>
-          </li>
-          <li>
-            <a href="https://www.udemy.com/completeweb2_jp/" target="_blank" rel="noopenner">【世界で30万人が受講】フルスタック・Webエンジニア講座（2017最新版）／井上 博樹</a>
-          </li>
-          <li>
-            <a href="https://www.udemy.com/ruby-bitcoin/" target="_blank" rel="noopenner">Rubyで作る！ビットコイン自動売買システム／Yuki Sako</a>
-          </li>
-          <li>
-            <a href="https://www.udemy.com/ethical-hacking-jpn1/" target="_blank" rel="noopenner">【情報セキュリティ】Ethical Hacking：ホワイトハッカー入門／阿部 ひろき</a>
-          </li>
-        </ul>
-      </div>
-    </section>
-  </main>
+    </div>
+  </section>
+  <section id="lessons">
+    <h2>List of learned<br>online courses</h2>
+    <div id="techacademy" class="left">
+      <h3>TechAcademy</h3>
+      <ul>
+        <li>
+          <a href="https://techacademy.jp/webdesign-bootcamp" target="_blank" rel="noopenner">Webデザインコース</a>
+        </li>
+        <li>
+          <a href="https://techacademy.jp/wordpress-bootcamp" target="_blank" rel="noopenner">WordPressコース</a>
+        </li>
+      </ul>
+    </div>
+    <div id="udemy" class="left">
+      <h3>Udemy</h3>
+      <ul>
+        <li>
+          <a href="https://www.udemy.com/intro_git/" target="_blank" rel="noopenner">はじめてのGitとGitHub／山浦 清透</a>
+        </li>
+        <li>
+          <a href="https://www.udemy.com/unscared_git/" target="_blank" rel="noopenner">もう怖くないGit！チーム開発で必要なGitを完全マスター／山浦 清透</a>
+        </li>
+        <li>
+          <a href="https://www.udemy.com/5dayslinux/" target="_blank" rel="noopenner">【5日でできる】はじめてのLinux入門（LPIC Level1対応）／井上 博樹</a>
+        </li>
+        <li>
+          <a href="https://www.udemy.com/linux_vps_3days/" target="_blank" rel="noopenner">【3日でできる】はじめてのLinuxサーバー構築入門【CentOS7・PHP７・Docker対応】／井上 博樹</a>
+        </li>
+        <li>
+          <a href="https://www.udemy.com/completeweb2_jp/" target="_blank" rel="noopenner">【世界で30万人が受講】フルスタック・Webエンジニア講座（2017最新版）／井上 博樹</a>
+        </li>
+        <li>
+          <a href="https://www.udemy.com/ruby-bitcoin/" target="_blank" rel="noopenner">Rubyで作る！ビットコイン自動売買システム／Yuki Sako</a>
+        </li>
+        <li>
+          <a href="https://www.udemy.com/ethical-hacking-jpn1/" target="_blank" rel="noopenner">【情報セキュリティ】Ethical Hacking：ホワイトハッカー入門／阿部 ひろき</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
 <?php get_footer();
