@@ -33,19 +33,19 @@ Template Name: プロフィール
           </tr>
           <tr>
             <th>資格</th>
-            <td>準中型自動車（2007年9月）</td>
+            <td>準中型自動車<br>（2007年9月）</td>
           </tr>
           <tr>
             <th></th>
-            <td>基本情報技術者（2012年11月）</td>
+            <td>基本情報技術者<br>（2012年11月）</td>
           </tr>
           <tr>
             <th></th>
-            <td>第一級陸上無線技術士（2014年9月）</td>
+            <td>第一級陸上無線技術士<br>（2014年9月）</td>
           </tr>
           <tr>
             <th></th>
-            <td>応用情報技術者（2019年6月）</td>
+            <td>応用情報技術者<br>（2019年6月）</td>
           </tr>
         </table>
       </div>
@@ -91,6 +91,9 @@ Template Name: プロフィール
         <li>
           <a href="https://www.amazon.co.jp/%E3%80%8C%E3%83%97%E3%83%AD%E3%81%AB%E3%81%AA%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AEWeb%E6%8A%80%E8%A1%93%E5%85%A5%E9%96%80%E3%80%8D-%E2%80%95%E2%80%95%E3%81%AA%E3%81%9C%E3%80%81%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AFWeb%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%82%92%E9%96%8B%E7%99%BA%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E3%81%AE%E3%81%8B-%E5%B0%8F%E6%A3%AE-%E8%A3%95%E4%BB%8B/dp/4774142352/ref=pd_sbs_14_2/357-4532857-9704947?_encoding=UTF8&pd_rd_i=4774142352&pd_rd_r=68a2c4a6-5622-449a-b4b0-4fd4456b0329&pd_rd_w=ecJ8n&pd_rd_wg=YdBHL&pf_rd_p=ad2ea29d-ea11-483c-9db2-6b5875bb9b73&pf_rd_r=Z2NPXSAAWYG03XVKT7EM&psc=1&refRID=Z2NPXSAAWYG03XVKT7EM" target="_blank" rel="noopenner">「プロになるためのWeb技術入門」 ――なぜ、あなたはWebシステムを開発できないのか／小森 裕介 著</a>
         </li>
+        <li>
+          <a href="https://www.amazon.co.jp/%E3%83%86%E3%82%B9%E3%83%88%E9%A7%86%E5%8B%95%E9%96%8B%E7%99%BA-Kent-Beck/dp/4274217884/ref=sr_1_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&keywords=%E3%83%86%E3%82%B9%E3%83%88%E9%A7%86%E5%8B%95%E9%96%8B%E7%99%BA&qid=1570720254&sr=8-1" target="_blank" rel="noopenner">テスト駆動開発／Kent Beck 著 和田 卓人 翻訳</a>
+        </li>
       </ul>
     </div>
   </section>
@@ -130,6 +133,15 @@ Template Name: プロフィール
         </li>
         <li>
           <a href="https://www.udemy.com/ethical-hacking-jpn1/" target="_blank" rel="noopenner">【情報セキュリティ】Ethical Hacking：ホワイトハッカー入門／阿部 ひろき</a>
+        </li>
+        <li>
+          <a href="https://www.udemy.com/course/modern-javascript/" target="_blank" rel="noopenner">The Modern JavaScript Bootcamp (2019)／Andrew Mead</a>
+        </li>
+        <li>
+          <a href="https://www.udemy.com/course/learn-vuejs/" target="_blank" rel="noopenner">Vue JS 入門決定版！jQuery を使わない Web 開発 - 導入からアプリケーション開発まで体系的に動画で学ぶ／中村 祐太</a>
+        </li>
+        <li>
+          <a href="https://www.udemy.com/course/aws-associate/" target="_blank" rel="noopenner">これだけでOK！ AWS 認定ソリューションアーキテクト – アソシエイト試験突破講座（初心者向け21時間完全コース）／Mr.Shingo</a>
         </li>
       </ul>
     </div>
