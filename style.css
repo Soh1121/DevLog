@@ -1,3 +1,10 @@
+/*
+Theme Name: DevLog
+Author: 佐藤壮一
+Description: 自身のポートフォリオサイト用テーマ
+Version: 1.0
+*/
+
 /* 全般的なCSS */
 body {
   font-family: 'Karla',YuGothic,"Yu Gothic","Hiragino Sans","ヒラギノ角ゴシック","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
@@ -11,6 +18,9 @@ body {
 h1 {
   color: #fff;
   font-size: 1.8em;
+}
+
+.page-title {
   font-family: 'Pacifico';
 }
 
@@ -67,6 +77,10 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+h1 a:hover {
+  text-decoration: none;
 }
 
 /* サンプル画像 */
@@ -144,6 +158,29 @@ footer {
     text-align: center;
     color: #4E7145;
     background-color: #e3e3e3;
+}
+
+/* 前後へのリンク */
+.pagenav a {
+  padding: 5px 10px;
+  border: solid 1px #cccccc;
+  border-radius: 10px;
+  color: #666666;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.pagenav .navleft a {
+  float: left;
+}
+
+.pagenav .navright a {
+  float: right;
+}
+
+.pagenav {
+  overflow: hidden;
+  padding: 30px 0 10px 0;
 }
 
 /* タブレット縦以下のサイズの場合 */
@@ -224,5 +261,9 @@ footer {
 
   nav ul li:hover {
     border-bottom: 1px solid #fff;
+  }
+
+  .pagenav {
+    margin: 10px 0;
   }
 }

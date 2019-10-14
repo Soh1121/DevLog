@@ -84,6 +84,10 @@
   padding-top: 16px;
 }
 
+#portfolio .white {
+  color: #fff;
+}
+
 #portfolio .sample {
   width: 248px;
   height: 140px;
@@ -182,9 +186,9 @@
   margin-right: 30px;
 }
 
-#blog .sample {
-  width: 218px;
-  height: 140px;
+#blog .eyecatch {
+  margin-bottom: 10px;
+  width: 100%;
 }
 
 #blog h2 {
@@ -354,6 +358,10 @@
   #blog .blog-box {
     margin: 0 auto;
     margin-top: 30px;
+  }
+
+  #blog .button-readmore {
+    padding: 10px 0;
   }
 
   #blog .button-readmore:hover {
