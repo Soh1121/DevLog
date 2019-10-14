@@ -1,19 +1,26 @@
-.white {
+#page404 .white {
     background-color: #fff;
 }
 
-.white h2 {
+#page404 .white h2 {
     padding-top: 50px;
     color: #4E7145;
 }
 
-.white p {
+#page404 .white p {
     padding-top: 30px;
     padding-bottom: 50px;
 }
 
-#profile img {
-    margin-top: 30px;
+#page404 #portfolio h3 {
+  color: #fff;
+}
+
+#page404 #profile img {
+    position: absolute;
+    margin-top: 133px;
+    top: 50%;
+    left: 50%;
     width: 30%;
     heigh: 30%;
     -webkit-box-sizing: border-box;
@@ -25,49 +32,78 @@
     border: 1.5px solid #4E7145;
 }
 
+#page404 #profile p {
+    padding-top: 250px;
+}
+
+#page404 #profile .profile-pic {
+    position: relative;
+}
+
 /* ブログ */
-#blog {
+#page404 #blog {
   background-color: #4E7145;
 }
 
-#blog h2 {
+#page404 #blog h2 {
   color: #fff;
 }
 
-#blog .button-readmore {
+#page404 #blog .button-readmore {
   color: #4E7145;
   background-color: #fff;
 }
 
-#blog .button-readmore:hover {
+#page404 #blog .button-readmore:hover {
   color: #4E7145;
   background-color: rgba(224, 255, 217, 0.7);
 }
 
-#blog h3 {
+#page404 #blog h3 {
     color: #fff;
 }
 
-#blog p {
+#page404 #blog p {
     color: #fff;
 }
 
 /* タブレット縦以下のサイズの場合 */
 @media (max-width: 767px) {
-    #portfolio .works-box {
+    #page404 #portfolio .works-box {
     position: static;
     display: block;
     margin: 0 auto;
     margin-top: 16px;
   }
 
-  #portfolio .works-box a .works-box-inner {
+  #page404 #portfolio .works-box a .works-box-inner {
     display: inline-block;
     width: 100%;
   }
 
-  #portfolio .works-box a .works-box-inner .button-readmore:hover {
+  #page404 #portfolio .works-box a .works-box-inner .button-readmore:hover {
     color: #fff;
     background-color: #4E7145;
+  }
+
+  #page404 .white h2 {
+    padding-top: 50px;
+  }
+
+  #page404 p {
+    padding: 0 5%;
+  }
+
+  #page404 #profile {
+    padding: 0;
+  }
+
+  #page404 #profile img {
+    margin-top: 20px;
+    position: static;
+  }
+
+  #page404 #profile p {
+    padding-top: 0;
   }
 }
