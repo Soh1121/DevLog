@@ -1,6 +1,6 @@
 # DevLog
-ポートフォリオサイト用自作WordPressテーマです。
-以下のサイトに適用して利用しています。
+ポートフォリオサイト用自作WordPressテーマです。  
+以下のサイトに適用して利用しています。  
 [DevLog - Sohのエンジニアブログ](https://www.soh-devlog.tokyo/)
 
 ## 使用技術
