@@ -2,6 +2,7 @@
 ポートフォリオサイト用自作WordPressテーマです。  
 以下のサイトに適用して利用しています。  
 [DevLog - Sohのエンジニアブログ](https://www.soh-devlog.tokyo/)
+![DevLog](https://github.com/Soh1121/DevLog/blob/image/devlog.png)
 
 ## 使用技術
 - GCP
