@@ -26,25 +26,28 @@
               <span class="postcat">
                 <i class="far fa-folder-open"></i>
                 <?php the_category(', '); ?>
-              </sapn>
+                </sapn>
             </div>
           </div>
-        </article></a>
+        </article>
+      </a>
 
-      <?php endwhile;
-      endif; ?>
+  <?php endwhile;
+  endif; ?>
 
-      <?php if ($wp_query->max_num_pages > 1) : ?>
-        <div class="pagenav clear">
-          <span class="navleft">
-            <?php previous_posts_link('<i class="fas fa-chevron-circle-left"></i> 新しい記事'); ?>
-          </span>
+  <div class="clear">
+    <?php if ($wp_query->max_num_pages > 1) : ?>
+      <div class="pagenav">
+        <span class="navleft">
+          <?php previous_posts_link('<i class="fas fa-chevron-circle-left"></i> 新しい記事'); ?>
+        </span>
 
-          <span class="navright">
-            <?php next_posts_link('古い記事 <i class="fas fa-chevron-circle-right"></i>'); ?>
-          </span>
-        </div>
-      <?php endif; ?>
+        <span class="navright">
+          <?php next_posts_link('古い記事 <i class="fas fa-chevron-circle-right"></i>'); ?>
+        </span>
+      </div>
+    <?php endif; ?>
+  </div>
 
 </div>
 
