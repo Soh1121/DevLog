@@ -10,6 +10,7 @@
               <i class="far fa-clock"></i>
               <time class="date updated"><?php the_time('Y年n月j日'); ?></time>
             </div>
+            <?php the_post_thumbnail('full'); ?>
             <?php the_content(); ?>
           </section>
         <?php endwhile; ?>
