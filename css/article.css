@@ -25,6 +25,18 @@
     line-height: 1.75em;
 }
 
+#entry ul {
+    margin: 1em 0;
+    padding-left: 40px;
+    list-style-type: disc;
+}
+
+#entry ol {
+    margin: 1em 0;
+    padding-left: 40px;
+    list-style-type: decimal;
+}
+
 #entry h2 {
     margin-top: 50px;
     padding: .5em .5em .5em .5em;
